@@ -1,0 +1,187 @@
+/* == GLOBAL == */
+
+body, h1, h2, h3, h4, h5, h6 {
+	font-family: 'Open Sans', sans-serif;
+}
+
+::selection {
+	background-color: #fff200;
+}
+
+
+/* == NAV == */
+
+.navbar {
+	height: 50px;
+	background: rgba(95,118,133,0.8);
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 100;
+}
+
+.logo {
+	background: url('../img/vox_logo.svg');
+	float: left;
+	height: 34px;
+	width: 72px;
+	margin: 8px 0 0 22px;
+}
+
+.logo:hover {
+	background: url('../img/vox_logo_yellow.svg');
+	cursor: pointer;
+}
+
+.share li {
+	float: right;
+}
+
+.share li i {
+	display: block;
+	margin-left: 20px;
+}
+
+.share .icons {
+	padding: 18px 22px 0 0;
+}
+
+
+/* == LAYOUT == */
+
+img.bg {
+	min-height: 100%;
+	min-width: 1024px;
+	width: 100%;
+	height: auto;
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+
+.explainer {
+	width: 270px;
+	position: fixed;
+	left: 30px;
+	top: 100px;
+	background-color: #313131;
+	height: 600px; /* Remove after filled content */
+}
+
+.content {
+	background: #fff;
+	max-width: 1000px;
+	/*height: 100%;*/
+	margin: 100px 10% 70px 370px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	display: block;
+}
+
+
+/* == CONTENT == */
+
+.card-count {
+	display: inline-block;
+	text-transform: uppercase;
+	margin: 0;
+	line-height: 35px;
+	color: #888;
+	width: 100%;
+	text-align: center;
+	font-family: helvetica, arial, sans-serif;
+	font-size: 13px;
+	background-color: #fff200;
+}
+
+.card-count:before {
+	content: "\f104";
+	float: left;
+	margin-left: 20px;
+	font-family: FontAwesome;
+
+}
+
+.card-count:after {
+	content: "\f105";
+	float: right;
+	margin-right: 20px;
+	font-family: FontAwesome;
+
+}
+
+.article {
+	padding: 55px 10% 25px;
+	line-height: 1.75em;
+	margin-top: 0;
+	color: #5e605f;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 500;
+	font-size: 0.938em;
+}
+
+.article p {
+	margin: 0 0 1.5em 0;
+}
+
+.article h2 {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 700;
+	font-size: 1.5em;
+	line-height: 1.1;
+	-webkit-font-smoothing: antialiased;
+	color: #4b4d4c;
+	margin-bottom: 0.83em;
+}
+
+/* == EXPLAINER == */
+
+
+
+/* == MEDIA QUERIES == */
+
+@media all and (max-width: 1200px) { 
+	
+	.content {
+		margin: 100px 20px 70px 340px;
+	}
+}
+
+@media all and (max-width: 1080px) { 
+	
+	
+}
+
+@media all and (max-width: 1000px) { 
+	
+	.explainer {
+		left: 0;
+	}
+
+	.content {
+		margin: 100px 20px 70px 310px;
+	}
+}
+
+@media all and (max-width: 880px) { 
+
+	.content {
+		margin: 65px 5%;
+	}
+
+	.explainer {
+		left: -170%;
+		top: 52px;
+		bottom: 0;
+		position: absolute;
+	}
+}
+
+@media all and (max-width: 600px) { 
+	
+	.content {
+		margin: 65px 10px;
+	}
+}

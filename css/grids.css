@@ -1,0 +1,205 @@
+/* == GRID == */
+
+*, *:before, *:after {
+  box-sizing: border-box; /* Apply border-box to all */
+}
+
+.grid {
+  width: 100%;
+}
+
+/*.row {
+  margin-bottom: 1em;
+}*/
+
+.grid, .row, [class*="-col"] { 
+  padding: 0;
+  margin: 0; /* Target all classes "-col" */
+}
+
+.grid:after, .row:after {
+  content: "";
+  display: table;
+  clear: both; /* Clearfix for floats */
+}
+
+.row {
+  margin-bottom: 1em;
+}
+
+.row:last-child {
+  margin-bottom: 0; /* Targets last row in grid */
+}
+
+
+/* == COLUMNS == */
+
+[class*="-col"] {
+  float: left;
+  margin-right: 1.5%; /* Float all "-col" left - gutter 1.5% */
+
+}
+
+[class*="-col"]:last-child {
+  margin-right: 0; /* No gutter for last "-col" */
+}
+
+/* 16 Columns - 1.5% gutter */
+
+.one-col {
+  width: 6.25%;
+  border: 1px solid red;
+}
+
+.two-col {
+  width: 12.5%;
+  border: 1px solid red;
+}
+
+.three-col {
+  width: 18.75%;
+}
+
+.four-col {
+  width: 25.0%;
+}
+
+.five-col {
+  width: 31.25%;
+}
+
+.six-col {
+  width: 37.5%;
+}
+
+.seven-col {
+  width: 43.75%;
+}
+
+.eight-col {
+  width: 50.0%;
+}
+
+.nine-col {
+  width: 56.25%;
+}
+
+.ten-col {
+  width: 62.5%;
+}
+
+.eleven-col {
+  width: 68.75%;
+}
+
+.twelve-col {
+  width: 75.0%;
+}
+
+.thirteen-col {
+  width: 81.25%;
+}
+
+.fourteen-col {
+  width: 87.5%;
+}
+
+.fifteen-col {
+  width: 93.75%;
+}
+
+.sixteen-col {
+  width: 100%;
+}
+
+
+/* == OFFSETS == */
+
+/* 1.5% + col width */
+
+.one-offset {
+  margin-left: 7.75%;
+}
+
+.two-offset {
+  margin-left: 14.0%;
+}
+
+.three-offset {
+  margin-left: 20.25%;
+}
+
+.four-offset {
+  margin-left: 26.5%;
+}
+
+.five-offset {
+  margin-left: 32.75%;
+}
+
+.six-offset {
+  margin-left: 39.0%;
+}
+
+.seven-offset {
+  margin-left: 45.25%;
+}
+
+.eight-offset {
+  margin-left: 51.5%;
+}
+
+.nine-offset {
+  margin-left: 57.75%;
+}
+
+.ten-offset {
+  margin-left: 64.0%;
+}
+
+.eleven-offset {
+  margin-left: 70.25%;
+}
+
+.twelve-offset {
+  margin-left: 76.5%;
+}
+
+.thirteen-offset {
+  margin-left: 82.75%;
+}
+
+.fourteen-offset {
+  margin-left: 89.0%;
+}
+
+.fifteen-offset {
+  margin-left: 95.25%;
+}
+
+/* == MEDIA QUERIES == */
+
+@media all and (max-width: 880px) { 
+  [class*="-col"] {
+    width: 100%;
+    margin-bottom: 1em; /* Collapse columns to 1 column below 768px */
+  }
+  
+  .row:last-child > [class*="-col"]:last-child {
+    margin-bottom: 0; /* No margin on last row & last column */
+  }
+  
+  [class*="-offset"] {
+    margin-left: 0; /* Remove margin from offset columns */
+  }
+    
+  .row {
+    margin: 0;
+  }
+
+}
+
+.grid {
+  max-width: 1200px;
+  margin: 0 auto;
+}

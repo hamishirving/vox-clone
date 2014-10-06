@@ -1,0 +1,193 @@
+/* == TEMP STYLES == */
+
+/*.grid {
+    background-color: #fff;
+}*/
+
+/*.row {
+    background-color: red;
+}*/
+
+/*.second {
+  background-color: blue;
+}
+
+.first {
+  background-color: green;
+}
+
+[class*="-col"] {
+    background-color: #EEE;
+}*/
+
+
+/* == GRID == */
+
+*, *:before, *:after {
+  box-sizing: border-box; /* Apply border-box to all */
+}
+
+.grid {
+  width: 100%;
+}
+
+/*.row {
+  margin-bottom: 1em;
+}*/
+
+.grid, .row, [class*="-col"] { 
+  padding: 0;
+  margin: 0; /* Target all classes "-col" */
+}
+
+.grid:after, .row:after {
+  content: "";
+  display: table;
+  clear: both; /* Clearfix for floats */
+}
+
+.row {
+  margin-bottom: 1em;
+}
+
+.row:last-child {
+  margin-bottom: 0; /* Targets last row in grid */
+}
+
+
+/* == COLUMNS == */
+
+[class*="-col"] {
+  float: left;
+  margin-right: 1.6%; /* Float all "-col" left, gutter 1.6% */
+}
+
+[class*="-col"]:last-child {
+  margin-right: 0; /* No gutter for last "-col" */
+}
+
+/* 12 Columns - 1.6% gutter */
+
+.one-col {
+  width: 6.866%;
+}
+
+.two-col {
+  width: 15.33%;
+}
+
+.three-col {
+  width: 23.8%;
+}
+
+.four-col {
+  width: 32.26%;
+}
+
+.five-col {
+  width: 40.73%;
+}
+
+.six-col {
+  width: 49.2%;
+}
+
+.seven-col {
+  width: 57.66%;
+}
+
+.eight-col {
+  width: 66.13%;
+}
+
+.nine-col {
+  width: 74.6%;
+}
+
+.ten-col {
+  width: 83.06%;
+}
+
+.eleven-col {
+  width: 91.53%;
+}
+
+.twelve-col {
+  width: 100%;
+}
+
+
+/* == OFFSETS == */
+
+/* 1.6% + col width */
+
+.one-offset {
+  margin-left: 8.466%;
+}
+
+.two-offset {
+  margin-left: 16.93%;
+}
+
+.three-offset {
+  margin-left: 18.53%;
+}
+
+.four-offset {
+  margin-left: 33.86%;
+}
+
+.five-offset {
+  margin-left: 42.33%;
+}
+
+.six-offset {
+  margin-left: 50.8%;
+}
+
+.seven-offset {
+  margin-left: 59.26%;
+}
+
+.eight-offset {
+  margin-left: 67.73%;
+}
+
+.nine-offset {
+  margin-left: 76.2%;
+}
+
+.ten-offset {
+  margin-left: 84.66%;
+}
+
+.eleven-offset {
+  margin-left: 93.13%;
+}
+
+/* == MEDIA QUERIES == */
+
+@media all and (max-width: 768px) { 
+  [class*="-col"] {
+    width: 100%;
+    margin-bottom: 1em; /* Collapse columns to 1 column below 768px */
+  }
+  
+  .row:last-child > [class*="-col"]:last-child {
+    margin-bottom: 0; /* No margin on last row & last column */
+  }
+  
+  [class*="-offset"] {
+    margin-left: 0; /* Remove margin from offset columns */
+  }
+    
+  .row {
+    margin: 0;
+  }
+
+}
+
+.grid {
+  max-width: 1200px;
+  margin: 0 auto;
+}
