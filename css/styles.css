@@ -33,13 +33,29 @@ body, h1, h2, h3, h4, h5, h6 {
 	cursor: pointer;
 }
 
+.share {
+	text-transform: uppercase;
+	color: #fff;
+	font-family: helvetica, arial, sans-serif;
+	margin-right: 20px;
+}
+
+.share p {
+	font-size: 10px;
+	margin-top: 4px;
+}
+
+.share em {
+	font-style: italic;
+}
+
 .share li {
 	float: right;
+	margin-left: 20px;
 }
 
 .share li i {
 	display: block;
-	margin-left: 20px;
 }
 
 .share .icons {
@@ -135,6 +151,69 @@ img.bg {
 	color: #4b4d4c;
 	margin-bottom: 0.83em;
 }
+
+.align-right {
+	float: right;
+/*	width: 40%;*/
+	padding: 0 0 0 1em;
+}
+
+.photo {
+	background: #fff;
+	padding: 7px;
+	border: solid 1px #ddd;
+	width: 240px;
+}
+
+.author {
+	text-transform: uppercase;
+	color: #6d98a8;
+	line-height: 26px;
+	font-size: 0.875em;
+	font-weight: 700;
+}
+
+.foot p {
+	display: inline-block;
+	text-transform: uppercase;
+	margin: 0;
+	line-height: 35px;
+	color: #4c4e4d;
+	width: 100%;
+	text-align: center;
+	font-family: helvetica, arial, sans-serif;
+	font-size: 12px;
+	border-top: 1px solid #d9d9d9;
+}
+
+.foot p:before {
+	content: "\f104";
+	float: left;
+	margin-left: 20px;
+	font-family: FontAwesome;
+
+}
+
+.foot p:after {
+	content: "\f105";
+	float: right;
+	margin-right: 20px;
+	font-family: FontAwesome;
+
+}
+
+.foot-icons li {
+	display: inline;
+	text-align: center;
+}
+
+/*.foot-icons li i {
+	display: inline-block;
+	margin: 0 0 0 5px;
+	height: 1.5em;
+	color: #4c4e4d;
+	padding: 5px;
+}*/
 
 /* == EXPLAINER == */
 
