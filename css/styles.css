@@ -42,7 +42,7 @@ body, h1, h2, h3, h4, h5, h6 {
 
 .share p {
 	font-size: 10px;
-	margin-top: 4px;
+	margin-top: 2px;
 }
 
 .share em {
@@ -52,6 +52,7 @@ body, h1, h2, h3, h4, h5, h6 {
 .share li {
 	float: right;
 	margin-left: 20px;
+	cursor: pointer;
 }
 
 .share li i {
@@ -84,8 +85,9 @@ img.bg {
 	position: fixed;
 	left: 30px;
 	top: 100px;
+	bottom: 20px;
 	background-color: #313131;
-	height: 600px; /* Remove after filled content */
+	overflow: hidden;
 }
 
 .content {
@@ -255,10 +257,73 @@ img.bg {
 	text-decoration: underline;
 }
 
-.explainer-date {
-
+.scroller-top {
+	padding: 4px 0 4px;
+	text-align: center;
+	background: #2a2a2a;
+	width: 100%;
+	color: #777;
+	cursor: pointer;
+	font-family: FontAwesome;
+	line-height: 1;
 }
 
+.scroller-top:hover {
+	color: #fff;
+}
+
+.scroller-top:before {
+	content: "\f106";
+}
+
+.toc {
+	font-family: 'Open Sans', sans-serif;
+	width: 100%;
+	padding: 10px 15px 36px;
+	background: #313131;
+	position: relative;
+	overflow: auto;
+}
+
+.toc li {
+	padding: 5px 3px;
+	font-size: 0.9em;
+	margin: 1em 0 0 1.75em;	
+}
+
+.toc a {
+	text-decoration: none;
+	color: #666;
+}
+
+.toc a:hover  {
+	color: #6f96a8;
+}
+
+.current a {
+	color: #fff200;
+}
+
+.scroller-bottom {
+	padding: 4px 0 4px;
+	text-align: center;
+	background: #2a2a2a;
+	width: 100%;
+	color: #777;
+	position: absolute;
+	bottom: 0;
+	cursor: pointer;
+	font-family: FontAwesome;
+	line-height: 1;
+}
+
+.scroller-bottom:hover {
+	color: #fff;
+}
+
+.scroller-bottom:before {
+	content: "\f107";
+}
 
 
 /* == MEDIA QUERIES == */
