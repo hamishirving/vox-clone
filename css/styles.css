@@ -93,7 +93,6 @@ img.bg {
 .content {
 	background: #fff;
 	max-width: 1000px;
-	/*height: 100%;*/
 	margin: 100px 10% 70px 370px;
 	position: absolute;
 	top: 0;
@@ -213,21 +212,13 @@ img.bg {
 	text-align: center;
 }
 
-/*.foot-icons li i {
-	display: inline-block;
-	margin: 0 0 0 5px;
-	height: 1.5em;
-	color: #4c4e4d;
-	padding: 5px;
-}*/
 
 /* == EXPLAINER == */
 
 .header {
 	background: #fff200;
 	width: 100%;
-/*	height: 170px;*/
-	padding: 15px 20px;
+	padding: 25px 20px;
 }
 
 .explainer h2 {
@@ -237,7 +228,7 @@ img.bg {
 	line-height: 1.1;
 	-webkit-font-smoothing: antialiased;
 	color: #222;
-	margin: 0 0 20px 0;
+	margin: 0 0 15px 0;
 }
 
 .explainer-byline, .explainer-date {
@@ -261,6 +252,7 @@ img.bg {
 	padding: 4px 0 4px;
 	text-align: center;
 	background: #2a2a2a;
+	position: relative;
 	width: 100%;
 	color: #777;
 	cursor: pointer;
@@ -282,7 +274,9 @@ img.bg {
 	padding: 10px 15px 36px;
 	background: #313131;
 	position: relative;
-	overflow: auto;
+	overflow-y: auto;
+	line-height: 1.4em;
+	font-size: 0.9em;
 }
 
 .toc li {
@@ -296,9 +290,14 @@ img.bg {
 	color: #666;
 }
 
-.toc a:hover  {
+.toc a:not(.current):hover {
 	color: #6f96a8;
 }
+
+/*.toc a:hover:not(.current)  {
+	color: #6f96a8;
+}
+*/
 
 .current a {
 	color: #fff200;
@@ -335,11 +334,6 @@ img.bg {
 	}
 }
 
-@media all and (max-width: 1080px) { 
-	
-	
-}
-
 @media all and (max-width: 1000px) { 
 	
 	.explainer {
@@ -363,11 +357,28 @@ img.bg {
 		bottom: 0;
 		position: absolute;
 	}
+
+	.share p {
+		display: none;
+}
 }
 
 @media all and (max-width: 600px) { 
 	
+	.share .icons {
+		padding: 18px 0 0 0;
+	}
+
+	.share li {
+		margin-left: 10px;
+	}
+
+
 	.content {
 		margin: 65px 10px;
+	}
+
+	.photo {
+		width: 140px;
 	}
 }
