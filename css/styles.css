@@ -221,6 +221,44 @@ img.bg {
 
 /* == EXPLAINER == */
 
+.header {
+	background: #fff200;
+	width: 100%;
+/*	height: 170px;*/
+	padding: 15px 20px;
+}
+
+.explainer h2 {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 700;
+	font-size: 1.375em;
+	line-height: 1.1;
+	-webkit-font-smoothing: antialiased;
+	color: #222;
+	margin: 0 0 20px 0;
+}
+
+.explainer-byline, .explainer-date {
+	font-family: 'Open Sans', sans-serif;
+	text-transform: uppercase;
+	font-size: .75em;
+	color: #4c4e4d;
+	margin-top: 5px;
+}
+
+.explainer-byline a {
+	color: #6d98a8;
+	text-decoration: none;
+}
+
+.explainer-byline a:hover {
+	text-decoration: underline;
+}
+
+.explainer-date {
+
+}
+
 
 
 /* == MEDIA QUERIES == */
